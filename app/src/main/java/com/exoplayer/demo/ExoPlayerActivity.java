@@ -43,7 +43,6 @@ public class ExoPlayerActivity extends AppCompatActivity {
 
     private SimpleExoPlayerView simpleExoPlayerView;
 
-    static Handler mainHandler = new Handler();
     // step1. 创建一个默认的TrackSelector
     // 创建带宽
     BandwidthMeter bandwidthMeter = new DefaultBandwidthMeter();
