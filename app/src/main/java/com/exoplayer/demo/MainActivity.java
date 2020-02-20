@@ -27,12 +27,8 @@ public class MainActivity extends AppCompatActivity {
                 intent = new Intent(MainActivity.this, ExoPlayerActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.video_btn_2:
-                intent = new Intent(MainActivity.this, GoogleExoplayerActivity.class);
-                startActivity(intent);
-                break;
             case R.id.video_btn_3:
-                intent = new Intent(MainActivity.this, GoogleExoplayerActivity.class);
+                intent = new Intent(MainActivity.this, ExoPlayerTestActivity.class);
                 startActivity(intent);
                 break;
         }

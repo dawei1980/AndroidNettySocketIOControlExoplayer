@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".GoogleExoplayerActivity">
+        <activity android:name=".ExoPlayerTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
