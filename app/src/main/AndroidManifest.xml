@@ -33,7 +33,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ExoPlayerVideoActivity">
+        <activity android:name=".ExoPlayerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".GoogleVideoActivity">
+        <activity android:name=".GoogleExoplayerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>

@@ -35,9 +35,7 @@ import com.google.android.exoplayer2.util.Util;
 
 import java.util.UUID;
 
-import butterknife.ButterKnife;
-
-public class GoogleVideoActivity extends AppCompatActivity {
+public class GoogleExoplayerActivity extends AppCompatActivity {
 
     private static final String DEFAULT_MEDIA_URI = "https://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-lavf-56.36.100-aac-avc-main-1280x720.mkv";
     private static final String SURFACE_CONTROL_NAME = "surfacedemo";
@@ -62,7 +60,7 @@ public class GoogleVideoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_google_video);
+        setContentView(R.layout.activity_exoplayer_google);
         playerControlView = findViewById(R.id.player_control_view);
         fullScreenView = findViewById(R.id.full_screen_view);
         fullScreenView.setOnClickListener(
@@ -96,7 +94,7 @@ public class GoogleVideoActivity extends AppCompatActivity {
                 button.setOnClickListener(
                         v ->
                                 startActivity(
-                                        new Intent(GoogleVideoActivity.this, GoogleVideoActivity.class)
+                                        new Intent(GoogleExoplayerActivity.this, GoogleExoplayerActivity.class)
                                                 .putExtra(OWNER_EXTRA, /* value= */ false)));
             } else {
                 SurfaceView surfaceView = new SurfaceView(this);
@@ -219,7 +217,7 @@ public class GoogleVideoActivity extends AppCompatActivity {
                         .build();
         videoSurface = new Surface(surfaceControl);
         player.setVideoSurface(videoSurface);
-        GoogleVideoActivity.player = player;
+        GoogleExoplayerActivity.player = player;
     }
 
     private void setCurrentOutputView(@Nullable SurfaceView surfaceView) {
@@ -251,7 +249,7 @@ public class GoogleVideoActivity extends AppCompatActivity {
     }
 
     private static void reparent(@Nullable SurfaceView surfaceView) {
-        SurfaceControl surfaceControl = Assertions.checkNotNull(GoogleVideoActivity.surfaceControl);
+        SurfaceControl surfaceControl = Assertions.checkNotNull(GoogleExoplayerActivity.surfaceControl);
         if (surfaceView == null) {
             new SurfaceControl.Transaction()
                     .reparent(surfaceControl, /* newParent= */ null)

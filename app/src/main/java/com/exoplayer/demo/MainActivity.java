@@ -20,15 +20,19 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.video_btn_1,R.id.video_btn_2})
+    @OnClick({R.id.video_btn_1,R.id.video_btn_2,R.id.video_btn_3})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.video_btn_1:
-                intent = new Intent(MainActivity.this, ExoPlayerVideoActivity.class);
+                intent = new Intent(MainActivity.this, ExoPlayerActivity.class);
                 startActivity(intent);
                 break;
             case R.id.video_btn_2:
-                intent = new Intent(MainActivity.this, GoogleVideoActivity.class);
+                intent = new Intent(MainActivity.this, GoogleExoplayerActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.video_btn_3:
+                intent = new Intent(MainActivity.this, GoogleExoplayerActivity.class);
                 startActivity(intent);
                 break;
         }

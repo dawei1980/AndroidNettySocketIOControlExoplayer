@@ -17,4 +17,11 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_2"
         android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/video_btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_3"
+        android:layout_marginTop="10dp"/>
 </LinearLayout>
