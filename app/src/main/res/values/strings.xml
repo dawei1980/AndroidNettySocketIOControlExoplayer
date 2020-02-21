@@ -3,6 +3,7 @@
     <string name="btn_1">视频1</string>
     <string name="btn_2">下载1</string>
     <string name="btn_3">视频2</string>
+    <string name="btn_4">下载2</string>
     <string name="back_text">返回</string>
 
     <string name="app_name">ExoplayerProject</string>

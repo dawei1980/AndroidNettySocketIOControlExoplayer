@@ -23,11 +23,11 @@ import okio.Okio;
 import okio.Sink;
 
 public class DownloadUtil {
-    public static void downloadFile1ByURLConnection () {
+    public static void downloadFile1ByURLConnection (String url, String path) {
         try{
             //下载路径，如果路径无效了，可换成你的下载路径
-            String url = "http://c.qijingonline.com/test.mkv";
-            String path = Environment.getExternalStorageDirectory().getAbsolutePath();
+//            String url = "http://c.qijingonline.com/test.mkv";
+//            String path = Environment.getExternalStorageDirectory().getAbsolutePath();
 
             final long startTime = System.currentTimeMillis();
             Log.i("DOWNLOAD","startTime="+startTime);
@@ -70,9 +70,9 @@ public class DownloadUtil {
         }
     }
 
-    private static void downloadFileByCustom(Context context){
+    public static void downloadFileByCustom(String url, String path,Context context){
         //下载路径，如果路径无效了，可换成你的下载路径
-        String url = "http://c.qijingonline.com/test.mkv";
+//        String url = "http://c.qijingonline.com/test.mkv";
         //创建下载任务,downloadUrl就是下载链接
         DownloadManager.Request request = new DownloadManager.Request(Uri.parse(url));
         //指定下载路径和下载文件名
@@ -83,9 +83,9 @@ public class DownloadUtil {
         downloadManager.enqueue(request);
     }
 
-    private static void downloadFileByOkhttp3(){
+    public static void downloadFileByOkhttp3(String url, String mSDCardPath){
         //下载路径，如果路径无效了，可换成你的下载路径
-        final String url = "http://c.qijingonline.com/test.mkv";
+//        final String url = "http://c.qijingonline.com/test.mkv";
         final long startTime = System.currentTimeMillis();
         Log.i("DOWNLOAD","startTime="+startTime);
 
@@ -102,7 +102,7 @@ public class DownloadUtil {
                 Sink sink = null;
                 BufferedSink bufferedSink = null;
                 try {
-                    String mSDCardPath= Environment.getExternalStorageDirectory().getAbsolutePath();
+//                    String mSDCardPath= Environment.getExternalStorageDirectory().getAbsolutePath();
                     File dest = new File(mSDCardPath,   url.substring(url.lastIndexOf("/") + 1));
                     sink = Okio.sink(dest);
                     bufferedSink = Okio.buffer(sink);

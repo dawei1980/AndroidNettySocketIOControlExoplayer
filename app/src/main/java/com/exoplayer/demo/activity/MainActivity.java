@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.video_btn_1,R.id.video_btn_2,R.id.video_btn_3})
+    @OnClick({R.id.video_btn_1,R.id.video_btn_2,R.id.video_btn_3,R.id.video_btn_4})
     public void onClick(View v){
         switch (v.getId()){
             case R.id.video_btn_1:
@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.video_btn_3:
                 intent = new Intent(MainActivity.this, ExoPlayerTestActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.video_btn_4:
+                intent = new Intent(MainActivity.this, Download2Activity.class);
                 startActivity(intent);
                 break;
         }
