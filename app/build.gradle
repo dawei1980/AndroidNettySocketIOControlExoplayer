@@ -42,5 +42,8 @@ dependencies {
 
     implementation group: 'io.socket', name: 'socket.io-client', version: '1.0.0'
 
+    implementation("com.squareup.okhttp3:okhttp:4.4.0")
+    implementation("com.squareup.okio:okio:2.4.3")
+
     implementation 'com.liulishuo.filedownloader:library:1.7.4'
 }

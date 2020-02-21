@@ -1,8 +1,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="btn_1">视频1</string>
-    <string name="btn_2">视频2</string>
-    <string name="btn_3">视频3</string>
+    <string name="btn_2">下载1</string>
+    <string name="btn_3">视频2</string>
     <string name="back_text">返回</string>
 
     <string name="app_name">ExoplayerProject</string>

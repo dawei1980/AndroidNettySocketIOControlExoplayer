@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+    <Button
+        android:id="@+id/download_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HttpUrlConnection下载"/>
+
+    <Button
+        android:id="@+id/download_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom下载"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/download_btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Okhttp3下载"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

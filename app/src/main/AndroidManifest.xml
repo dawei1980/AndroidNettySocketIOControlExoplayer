@@ -33,7 +33,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.ExoPlayerActivity">
+        <activity android:name=".activity.ExoPlayerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -48,7 +50,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.ExoPlayerTestActivity">
+        <activity android:name=".activity.ExoPlayerTestActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -63,7 +67,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.DownloadActivity"/>
+        <activity android:name=".activity.DownloadActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".activity.Download2Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
     </application>
 
 </manifest>
