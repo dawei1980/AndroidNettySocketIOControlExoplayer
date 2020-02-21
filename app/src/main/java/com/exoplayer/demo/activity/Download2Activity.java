@@ -33,10 +33,10 @@ public class Download2Activity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.download_btn1:
-
+                DownloadUtil.downloadFile1ByURLConnection(VIDEO_URL, SDPathHelper.VIDEO_PATH);
                 break;
             case R.id.download_btn2:
-
+                DownloadUtil.downloadFileByCustom(VIDEO_URL, SDPathHelper.VIDEO_PATH,Download2Activity.this);
                 break;
             case R.id.download_btn3:
                 DownloadUtil.downloadFileByOkhttp3(VIDEO_URL, SDPathHelper.VIDEO_PATH);

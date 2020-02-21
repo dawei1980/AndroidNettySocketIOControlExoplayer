@@ -12,7 +12,7 @@ import java.io.File;
 @SuppressLint("SdCardPath")
 public class SDPathHelper {
 
-    public static final String VIDEO_PATH = Environment.getExternalStorageDirectory()+"/"+"video/";
+    public static final String VIDEO_PATH = Environment.getExternalStorageDirectory()+"/"+"ExoplayerVideo/";
     static {
         while (!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
             try {
