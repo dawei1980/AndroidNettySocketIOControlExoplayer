@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SecondDownLoad_tvDownLoadFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载文件名称"
+            android:layout_alignParentLeft="true"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/SecondDownLoad_tvDownLoadSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载速度"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_toLeftOf="@+id/SecondDownLoad_tvDownLoadDetail"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/SecondDownLoad_tvDownLoadDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文件详情"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/SecondDownLoad_lLayoutDownLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/SecondDownLoad_pBarProgress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/SecondDownLoad_btnStartDownLoad"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:layout_marginLeft="3dp"
+            android:text="开始"/>
+
+        <Button
+            android:id="@+id/SecondDownLoad_btnStopDownLoad"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:textSize="12dp"
+            android:text="删除"/>
+
+    </LinearLayout>
+</LinearLayout>

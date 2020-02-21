@@ -1,4 +1,4 @@
-package com.exoplayer.demo;
+package com.exoplayer.demo.activity;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.exoplayer.demo.R;
 import com.google.android.exoplayer2.ExoPlayerFactory;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
@@ -71,8 +72,7 @@ public class ExoPlayerTestActivity extends AppCompatActivity {
         ExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
         // 传入Uri、加载数据的工厂、解析数据的工厂，就能创建出MediaSource
         Uri mp4VideoUri = Uri.parse(VIDEO_URL);
-        MediaSource videoSource = new ExtractorMediaSource(mp4VideoUri,
-                dataSourceFactory, extractorsFactory, null, null);
+        MediaSource videoSource = new ExtractorMediaSource(mp4VideoUri, dataSourceFactory, extractorsFactory, null, null);
         // Prepare
         player.prepare(videoSource);
 

@@ -1,10 +1,13 @@
-package com.exoplayer.demo;
+package com.exoplayer.demo.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.exoplayer.demo.R;
+
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -25,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         switch (v.getId()){
             case R.id.video_btn_1:
                 intent = new Intent(MainActivity.this, ExoPlayerActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.video_btn_2:
+                intent = new Intent(MainActivity.this, DownloadActivity.class);
                 startActivity(intent);
                 break;
             case R.id.video_btn_3:
