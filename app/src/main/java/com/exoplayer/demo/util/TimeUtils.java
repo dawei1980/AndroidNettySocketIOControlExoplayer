@@ -72,9 +72,9 @@ public class TimeUtils {
         return retStr;
     }
 
-    public static void main(String[] args) {
-        System.out.println(secToTime(600000));
-    }
+//    public static void main(String[] args) {
+//        System.out.println(secToTime(600000));
+//    }
 }
 
 
